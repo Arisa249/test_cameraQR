@@ -1,0 +1,61 @@
+#camera-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+#camera {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+#capture {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  padding: 15px 40px;
+  background: #ff3366;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+#capture:active {
+  opacity: 1;
+}
+
+/* プレビュー用取り直しボタンを画面下中央に固定 */
+#retake-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.large-btn {
+  font-size: 1.8em;
+  padding: 15px 30px;
+  background: #ff3366;
+  color: white;
+  border: none;
+}
+
+#save-hint {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+}
